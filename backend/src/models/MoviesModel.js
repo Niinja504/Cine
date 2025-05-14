@@ -23,7 +23,7 @@ const moviesSchema = new Schema(
     },
 
     director: {
-      type: Date,
+      type: String,
       require: true,
     },
 
