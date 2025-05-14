@@ -1,6 +1,6 @@
 import express from "express";
 import multer from "multer";
-import blogController from "../controllers/BlogController";
+import blogController from "../controllers/BlogController.js";
 
 const router = express.Router();
 

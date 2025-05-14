@@ -1,12 +1,12 @@
 // Importo todo lo de la libreria de Express
 import express from "express";
 import MoviesRoutes from "./src/routes/MovieRoute.js";
-import registerEmployeesRoutes from "./src/routes/registerEmployees.js";
-import loginRoutes from "./src/routes/login.js";
+import registerEmployeesRoutes from "./src/routes/RegisterEmployeeRoute.js";
+import loginRoutes from "./src/routes/LoginRoute.js";
 import cookieParser from "cookie-parser";
-import logoutRoutes from "./src/routes/Logout.js";
-import registerClients from "./src/routes/registerClients.js";
-import passwordRecoveryRoutes from "./src/routes/passwordRecovery.js";
+import logoutRoutes from "./src/routes/LogoutRoute.js";
+import registerClients from "./src/routes/RegisterClientsRoute.js";
+import passwordRecoveryRoutes from "./src/routes/PasswordRecovery.js";
 import blogRoutes from "./src/routes/BlogRoute.js";
 
 // Creo una constante que es igual a la libreria que importé

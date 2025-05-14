@@ -1,5 +1,5 @@
 import express from "express";
-import MoviesController from "../controllers/MoviesController";
+import MoviesController from "../controllers/MoviesController.js";
 // Router() nos ayuda a colocar los metodos
 // que tendra mi ruta
 const router = express.Router();
