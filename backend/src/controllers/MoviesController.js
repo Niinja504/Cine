@@ -3,7 +3,6 @@ import { config } from "../config.js";
 
 const MoviesController = {};
 
-// CREATE - Registrar una nueva película
 MoviesController.register = async (req, res) => {
   const {
     titulo,
@@ -44,7 +43,7 @@ MoviesController.register = async (req, res) => {
   }
 };
 
-// READ - Obtener todas las películas
+
 MoviesController.getAll = async (req, res) => {
   try {
     const movies = await MovieModel.find();
@@ -55,7 +54,7 @@ MoviesController.getAll = async (req, res) => {
   }
 };
 
-// UPDATE - Actualizar una película existente
+
 MoviesController.update = async (req, res) => {
   const { titulo, descripcion, director, genero, anio, duracion, imagen, isVerified } = req.body;
 
@@ -89,7 +88,7 @@ MoviesController.update = async (req, res) => {
   }
 };
 
-// DELETE - Eliminar una película
+
 MoviesController.delete = async (req, res) => {
   try {
     const deletedMovie = await MovieModel.findByIdAndDelete(req.params.id);
